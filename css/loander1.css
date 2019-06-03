@@ -1,0 +1,31 @@
+.carregar {
+  height: 50px;
+  transform-origin: bottom center;
+  animation: rotacao 3s linear infinite;
+}
+.circulo {
+  display: inline-block;
+  background-color: #a43a4b;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: crescer 1.5s linear infinite;
+  margin: -10px;
+}
+.circulo:nth-child(2) {
+  background-color: #342e37;
+  animation-delay: 0.75s;
+}
+
+@keyframes rotacao {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes crescer {
+  50% {
+    transform: scale(1);
+  }
+}
